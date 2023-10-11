@@ -28,7 +28,8 @@ int main() {
 			P *= pow(k, 2) + 1;
 			k++;
 		} while (k <= i);
-
+		E += P / (1 + pow(P, 2));
+		i++;
 	} while (i <= 15);
 	cout << E << endl;
 
